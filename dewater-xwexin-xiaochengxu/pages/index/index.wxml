@@ -1,0 +1,27 @@
+<!-- index.wxml -->
+<view class="container">
+
+  <view class="logoV">
+    <image class="logo" src="/img/logo.png" mode="aspectFit"></image>
+  </view>
+
+  <view class="title">使用方法</view>
+  <view class="text">
+    <view>①：打开某短视频APP</view>
+    <view>②：选择要下载的视频，点击分享按钮，在分享弹框中点击"复制链接"</view>
+    <view>③：将复制的链接粘贴到下面的输入框</view>
+  </view>
+  <view class="input">
+    <input class="weui-input" bindinput="bindLink" value="{{link}}" placeholder="在这里粘贴链接视频" />
+    <button size="mini" bindtap="pasteLink">粘贴链接</button>
+  </view>
+  <button class="getbtn" type="primary" style="width: 100%; padding: 30rpx 24rpx;" bindtap="analysisVideo" wx:if="{{link}}">
+    解析视频
+  </button>
+  <button class="getbtn" type="primary" style="width: 100%; padding: 30rpx 24rpx;" wx:if="{{visable}}" plain="true" bindtap="downVideo">
+    下载视频
+  </button>
+  <button class="getbtn" type="primary" style="width: 100%; padding: 30rpx 24rpx;" wx:if="{{visable}}" plain="true" bindtap="bindDeWaterLink">
+    复制无水印链接
+  </button>
+</view>
