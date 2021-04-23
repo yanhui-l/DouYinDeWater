@@ -1,6 +1,6 @@
 # DouYinDeWater
 香菜自制抖音去水印工具demo：前端微信小程序，后端java
-已上传至个人公众号-- <多放香菜> 欢迎使用
+已上传至个人公众号-- <多放香菜> 欢迎食用
 
 ![](https://github.com/yanhui-l/img-folder/blob/master/dewater/xaingcai.jpg)
 
