@@ -2,9 +2,9 @@
 香菜自制抖音去水印工具demo：前端微信小程序，后端java
 已上传至个人公众号-- <多放香菜> 欢迎使用
 
-![](screenshots/xiangcai.jpg)
+![](https://github.com/yanhui-l/img-folder/blob/master/dewater/xaingcai.jpg)
 
-![](screenshots/dewater.jpg)
+![](https://github.com/yanhui-l/img-folder/blob/master/dewater/dewater.jpg)
 
 
 # 用法
@@ -26,7 +26,7 @@ json传参 ：{
     "link":"抖音复制的链接地址"
 }
 ```
-此接口，直接下载视频到电脑本机，返回本地保存地址（保存可自行设置）
+此接口，直接下载视频到电脑本机，返回本地保存地址（保存路径可自行设置）
 
 # 原理分析
 
