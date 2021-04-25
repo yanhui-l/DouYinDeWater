@@ -111,8 +111,10 @@ public class DeWaterController {
                 conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.2.8) Firefox/3.6.8");
                 conn.addRequestProperty("Referer", "http://matols.com/");
                 conn.connect();
-                System.out.println("跳转地址:" + location);
-                return location;
+                //将http替换成https，不然小程序上线请求不到
+                String finalUrl = location.replaceFirst("http", "https");
+                System.out.println("跳转地址:" + finalUrl);
+                return finalUrl;
             }
             return url;
         } catch (Exception e) {
